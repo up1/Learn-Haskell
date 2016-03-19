@@ -112,6 +112,17 @@ Example of filter
 Example to add or operator
 [(x,y) | x <- [1..100], y <- [-100..10], x + y == 0 || x>0]
 
+* Type ของ or
+:t or
+or :: Foldable t => t Bool -> Bool
+
+:info or
+or :: Foldable t => t Bool -> Bool  -- Defined in ‘Data.Foldable’
+
+Lab recursion
+
+ps.
+ถ้าสร้าง function ซ้ำกับของที่มีให้ใช้ (') ต่อท้ายเช่น sum'
 
 
 
