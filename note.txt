@@ -185,6 +185,26 @@ List มันคือ recusive นั่นเอง
 [4]
 
 
+ช่วงบ่าย
+คูณสองแต่ละตัวใน list โดยใช้ list comprehensive และ pattern matching แทน
+
+doubleAll :: [Int] -> [Int]
+doubleAll [] = []
+doubleAll (x:xs) = (x * 2) : doubleAll xs
+
+> doubleAll [1,2]
+[2,4]
+
+ยกกำลังสอง
+powerAll :: [Int] -> [Int]
+powerAll [] = []
+powerAll (x:xs) = (x^2) : powerAll xs
+
+> powerAll [1,2,3]
+[1,4,9]
+
+
+
 
 
 
