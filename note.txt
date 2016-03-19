@@ -161,6 +161,8 @@ List มันคือ recusive นั่นเอง
 >xs
 [2,3]
 
+*** Immutable by default ***
+
 
 
 
