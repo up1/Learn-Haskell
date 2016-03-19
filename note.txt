@@ -132,6 +132,39 @@ Fibonacci
 https://en.wikipedia.org/wiki/Fibonacci_number
 
 
+Pattern matching
+
+let (x,y) = (10,20)
+let [x, y, z] = [1, 2, 3]
+
+List มันคือ recusive นั่นเอง
+เริ่มจาก list ว่าง
+
+[]
+1:[]
+1:2:[]
+1:2:3:[]
+
+ดังนั้นสามารถเขียน pattern ได้ดังนี้
+>let x:[] = [1]
+
+>:t
+(:) :: a -> [a] -> [a]
+
+ว่าด้วยเรื่องของ pattern matching 
+พยายามทำให้สองข้างเท่ากัน
+>let x:xs = [1]
+>xs
+[]
+
+>let x:xs = [1,2,3]
+>xs
+[2,3]
+
+
+
+
+
 
 
 
