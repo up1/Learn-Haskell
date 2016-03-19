@@ -10,6 +10,13 @@ fact x = x * fact (x -1)
 sum' ::  Int -> Int
 sum' 0 = 0
 sum' x = x + sum' (x-1)
+
+fibo 0 = 1
+fibo 1 = 1
+fibo 2 = 1
+fibo 3 = 2
+fibo 4 = fibo 3 + fibo 2
+fibo x = fibo (x-1) + fibo (x-2)
  
 
 
