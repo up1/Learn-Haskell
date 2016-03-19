@@ -31,8 +31,9 @@ a ตัวสุดท้ายคือ output
 Prelude> :t (^)
 (^) :: (Integral b, Num a) => a -> b -> a
 
-Tutple
-
+* Tuple
+student :: String -> Int -> (String, Int)
+student name age = (name, age)
 
 * List
 tail [1,2,3,4,5]
@@ -85,6 +86,11 @@ https://en.wikipedia.org/wiki/List_comprehension
 [x | x<- [1..5]]
 list ของ x 
 โดยใน x นำค่ามาจาก list ของ 1 ถึง 5
+
+[x | x<- [1..5]]
+[1,2,3,4,5]
+
+
 
 
 
