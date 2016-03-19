@@ -291,7 +291,22 @@ powerAll' = map'(^2)
 [1,4,9]
 
 
+Working with reduce (manual)
 
+Haskell build in
+> :t foldr    
+foldr :: Foldable t => (a -> b -> b) -> b -> t a -> b
+
+> :t foldl
+foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+
+> foldr (-) 0 [1,2,3]
+2
+> (1-(2-(3-0)))
+2
+
+> (((0-3)) - 2) - 1
+-6
 
 
 
