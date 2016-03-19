@@ -125,6 +125,12 @@ ps.
 ถ้าสร้าง function ซ้ำกับของที่มีให้ใช้ (') ต่อท้ายเช่น sum'
 
 
+Haskell programming guideline
+https://wiki.haskell.org/Programming_guidelines
+
+
+
+
 
 
 
