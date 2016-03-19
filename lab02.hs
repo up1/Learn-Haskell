@@ -21,9 +21,14 @@ fibo x = fibo (x-1) + fibo (x-2)
 length' [] = 0
 length' (x:xs) =  length' (xs) + 1
 
+--reduce
 sumAll :: [Int] -> Int
 sumAll [] = 0
 sumAll (x:xs) = sumAll (xs) + x
- 
+
+-- reduce
+productAll :: [Int] -> Int
+productAll [] = 1
+productAll (x:xs) = x * productAll (xs)
 
 
