@@ -203,6 +203,29 @@ powerAll (x:xs) = (x^2) : powerAll xs
 > powerAll [1,2,3]
 [1,4,9]
 
+จาก workshop ต่างกันเพียง * และ ยกกำลัง ?
+มันคือ duplication code !!
+ดังนั้นสามารถส่ง function as parameter ได้เลย
+หรือ high order function
+
+map' f [] = []
+map' f (x:xs) = f x : map' f xs
+
+
+การเรียกใช้งานแบบ anomymous function
+> map' (\x -> x*2) [1,2,3]
+[2,4,6]
+
+
+double x = x * 2
+> map' double [1,2,3]
+[2,4,6]
+
+
+
+
+
+
 
 
 
