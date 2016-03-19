@@ -251,6 +251,23 @@ Compose function :: Lab05
 > (double |> power) 10
 400
 
+About curry
+ทุก function ใน haskell รับเพียง 1 ค่า
+แล้วส่ง output ออกไป
+Int -> Int ->Int
+Int -> (Int -> Int)
+
+ถ้าใส่เพียงค่าเดียว
+สิ่งที่ return ออกมา คือ function (Int->Int) ออกมาให้เสมอ
+เช่น
+
+(+) 2  => คือ function
+((+) 2) 5 => 7 คือ 2 + 5 นะ
+
+>(+2) => function
+
+
+
 
 
 
