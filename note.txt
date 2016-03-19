@@ -163,8 +163,26 @@ List มันคือ recusive นั่นเอง
 
 *** Immutable by default ***
 
+//Lab
+(x:xs) = [1,2,3,4]
+>x
+1
+> xs
+[2,3,4]
 
+> let x2:xs2 = xs
+> x2
+2
 
+> xs2
+[3,4]
+
+> let x3:xs3 = xs2
+> x3
+3
+
+> xs3
+[4]
 
 
 

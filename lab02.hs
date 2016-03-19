@@ -17,6 +17,9 @@ fibo 2 = 1
 fibo 3 = 2
 fibo 4 = fibo 3 + fibo 2
 fibo x = fibo (x-1) + fibo (x-2)
+
+length' [] = 0
+length' (x:xs) =  length' (xs) + 1
  
 
 
