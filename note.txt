@@ -238,14 +238,5 @@ powerAll xs = map' power xs
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+Resources
+http://learnyouahaskell.com/
