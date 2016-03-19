@@ -217,6 +217,7 @@ map' f (x:xs) = f x : map' f xs
 [2,4,6]
 
 
+ลองเรียกใช้ function ตรง ๆ
 double x = x * 2
 > map' double [1,2,3]
 [2,4,6]
