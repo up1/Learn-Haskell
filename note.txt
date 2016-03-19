@@ -95,7 +95,15 @@ list ของ x
 
 [(x,y) | x<- [1..5], y <- [1..]]
 
+Add filter
+x ที่หาร 3 ลงตัว
+[x | x<- [1..20], x `mod` 3 == 0]
 
+mod มันเป็น เป็น function prefix operator
+mod 10 3
+
+5 + 3 //infix
+(+) 5 3 // prefix
 
 
 
