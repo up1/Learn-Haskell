@@ -235,6 +235,22 @@ doubleAll xs = map' double xs
 powerAll xs = map' power xs
 
 
+Compose function :: Lab05
+เอา function มารวมเพื่อสร้าง function ใหม่
+
+>let ds = compose power double
+> ds 10
+400
+
+> :t (.)
+(.) :: (b -> c) -> (a -> b) -> a -> c
+
+สร้งสัญลักษ์ใช้เอง
+(|>) g f = f.g
+
+> (double |> power) 10
+400
+
 
 
 
