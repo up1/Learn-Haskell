@@ -17,3 +17,8 @@ productAll (x:xs) = x * productAll (xs)
 reduce :: (Int -> Int -> Int) -> Int -> [Int] -> Int
 reduce _ initial [] = initial
 reduce fn initial (x:xs) = x  `fn` ( reduce fn initial xs )
+
+--Refactor sumAll and productAll with reduce
+sumAll' xs = reduce (+) 0 xs
+productAll' xs = reduce (*) 1 xs
+
