@@ -1,8 +1,4 @@
-module Lab03 where
-
-main :: IO()
-main = do
-    putStrLn "Hello World"
+module Lab04 where
 
 -- High order function
 map' f [] = []
