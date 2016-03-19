@@ -22,3 +22,8 @@ reduce fn initial (x:xs) = x  `fn` ( reduce fn initial xs )
 sumAll' xs = reduce (+) 0 xs
 productAll' xs = reduce (*) 1 xs
 
+-- Working with Foldable
+sumAll'' xs = foldr (+) 0 xs
+productAll'' xs = foldr (*) 1 xs
+
+
